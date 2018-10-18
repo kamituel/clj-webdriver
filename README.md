@@ -1,3 +1,6 @@
+**Maintaining this project so it works with newer Selenium versions.**
+No development/improvement is happening. See `0.7.2` branch for custom modifications we're adding.
+
 # [UNMAINTAINED] Clojure API for Selenium-WebDriver #
 
 This is a Clojure library for driving a web browser using Selenium-WebDriver.
