@@ -10,7 +10,7 @@
            org.mortbay.jetty.webapp.WebAppContext
            javax.servlet.Servlet
            org.openqa.selenium.remote.RemoteWebDriver
-           org.openqa.selenium.remote.server.DriverServlet
+           org.openqa.selenium.remote.server.WebDriverServlet
            [org.openqa.selenium.remote
             DesiredCapabilities
             HttpCommandExecutor]))
@@ -65,7 +65,7 @@
         (.setContextPath context "")
         (.setWar context ".")
         (.addHandler server context)
-        (.addServlet context DriverServlet path-spec)
+        (.addServlet context WebDriverServlet path-spec)
         (.addConnector server connector)
         (.start server)
         server)
